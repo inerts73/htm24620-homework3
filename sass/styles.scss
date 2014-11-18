@@ -15,9 +15,24 @@
   //
   // Practice 2, Practice 4.
   //
+  ul{
+	list-style-type: none;
+	padding-left: 0;
+  }
   &.affix{
     // The next element should have a top-margin so that the entire page
     // dont jump high when .affix is applied.
+	top: 0;
+	left: 0;
+	right: 0;
+	background: $body-bg;
+	
+	h1{
+		display: none;
+	}
+	ul{
+		margin-top: 1em;
+	}
     // + *{
     //   margin-top: 126px;
     // }
